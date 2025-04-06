@@ -90,6 +90,11 @@ elif page == "TIROS DE CAMPO INTENTADOS (F.G.A)":
 
 elif page == "Apuesta del Día":
     st.title("📋 Apuesta del Día")
+    st.markdown("""
+Esta apuesta fue actualizada manualmente por **@BlainkEiou**.  
+📬 Ante cualquier duda o sugerencia, contactame por Telegram: [@BlainkEiou](https://t.me/BlainkEiou)  
+🗓️ **Última actualización:** 2025-04-06 00:00:00
+""")
     if os.path.exists("apuesta_dia.xlsx"):
         df_apuesta = pd.read_excel("apuesta_dia.xlsx")
         st.dataframe(df_apuesta, use_container_width=True)
