@@ -15,9 +15,30 @@ if "show_changelog" not in st.session_state:
     st.session_state.show_changelog = True
 
 if st.session_state.show_changelog:
-    st.title("📢 Actualizaciones Recientes")
-    st.markdown("- ✅ F.G.M y F.G.A ahora no pierden el último valor ingresado")
-    if st.button("Ingresar a la app"):
+    st.title("📢 Actualización 1.0 - ¡Ya disponible!")
+
+    st.markdown("""
+    Nos complace anunciar que ya está disponible la **última versión** de nuestra plataforma, con un diseño más moderno y una serie de funciones que llevan la experiencia al siguiente nivel.  
+    Estas son las principales novedades:
+
+    ### 🚀 Mejoras Generales
+    - ✅ Interfaz más profesional y pulida.
+    - ✅ Estilo **oscuro** renovado y visualmente atractivo.
+    - ✅ Pantalla de **"Actualizaciones Recientes"** al iniciar la app.
+
+    ### 🏀 Secciones F.G.M (Tiros de Campo Acertados) y F.G.A (Tiros de Campo Intentados)
+    - ✅ Nuevo selector para elegir el tipo de línea a calcular:
+        - F.G.M: Dobles, Triples, Puntos o Libres.
+        - F.G.A: Dobles intentados, Triples intentados o Tiros de campo intentados.
+    - ✅ Posibilidad de seleccionar **cantidad de partidos** a evaluar: 10, 20 o personalizada (de 3 a 30).
+    - ✅ Botón para **limpiar tabla** rápidamente en ambas secciones.
+    - ✅ Lógica de cálculo precisa que muestra **aciertos sobre la línea** (ejemplo: 7/10, 9/10).
+    - ✅ Nuevo gráfico que se **despliega automáticamente** al calcular una línea para una mejor visualización de los datos.
+
+    ¡Gracias por acompañarnos en este proyecto! 🎯  
+    """)
+
+    if st.button("🚀 Ingresar a la app"):
         st.session_state.show_changelog = False
     st.stop()
 
